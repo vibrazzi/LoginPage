@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { DefaultLoginLayoutComponent } from '../../components/default-login-layout/default-login-layout.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -8,17 +8,17 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     DefaultLoginLayoutComponent,
     ReactiveFormsModule
+    
   ],
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
-  loginForm: FormGroup;
-
-  constructor() {
+  loginForm!: FormGroup;
+  constructor(){
     this.loginForm = new FormGroup({
       email: new FormControl('', [Validators.required, Validators.email]),
-      password: new FormControl('', [Validators.required, Validators.minLength(6)])
-    });
+      password: new FormControl('', [Validators.required, Validators.minLength(6)]) 
+    })
   }
 }
