@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PageLogin README/ENGLISH
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.1.
@@ -126,3 +127,7 @@ O Angular CLI não vem com uma estrutura de testes end-to-end por padrão. Você
 ## Additional Resources
 
 Para mais informações sobre o uso do Angular CLI, incluindo referências detalhadas de comandos, [visite a página Visão Geral e Referência de Comandos do Angular CLI](https://angular.dev/tools/cli).
+=======
+# LoginPage
+PROJETO APP DE LOGIN ANGULAR + TYPESCRIPT | FRONTEND
+>>>>>>> 89f712c16f34fa681f4d45be89adc306eed55796
