@@ -6,6 +6,8 @@ import { Router } from '@angular/router';
 import { LoginService } from '../../services/login.service';
 import { ToastrService } from 'ngx-toastr';
 
+
+
 interface SignupForm {
   name: FormControl,
   email: FormControl,
@@ -35,6 +37,7 @@ export class SignUpComponent {
     private loginService: LoginService,
     private toastService: ToastrService
   ){
+    
     this.signupForm = new FormGroup({
       name: new FormControl('', [Validators.required, Validators.minLength(3)]),
       email: new FormControl('', [Validators.required, Validators.email]),
@@ -50,6 +53,7 @@ export class SignUpComponent {
     })
   }
 
+  
   navigate(){
     this.router.navigate(["login"])
   }

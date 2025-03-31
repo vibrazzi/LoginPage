@@ -5,19 +5,20 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: 100vh; // Ocupa 100% do viewport
+    overflow-y: auto; // Permite rolagem caso o conteúdo ultrapasse o viewport
 
     section {
-        height: 100%; 
+        height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding: 10px; // Adiciona um espaçamento seguro
     }
 
     .main-section {
         gap: 8px;
-
         flex-grow: 1;
         background-color: $gray-bg;
     }
@@ -28,16 +29,18 @@ main {
 
         img {
             margin-bottom: 30px;
+            max-width: 100%;
+            height: auto;
         }
 
         h2 {
             font-size: 20px;
             font-weight: bold;
             margin-bottom: 45px;
+            text-align: center;
         }
 
         .btn-wrapper {
-            display: flex;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -51,7 +54,6 @@ main {
                 justify-content: center;
                 gap: 20px;
                 width: 100%;
-
                 font-size: 14px;
                 color: $gray-bg;
                 font-weight: 400;
@@ -77,18 +79,73 @@ main {
                 &:disabled {
                     opacity: 0.8;
                 }
-    
+
                 &.btn-primary {
                     background-color: $primary-color;
                     color: white;
-                    box-shadow:0px 8px 12px rgba(148.23004603385925, 64.33935597538948, 255, 0.20000000298023224);
+                    box-shadow: 0px 8px 12px rgba(148, 64, 255, 0.2);
                 }
-    
+
                 &.btn-secondary {
                     border: 1px solid $primary-color;
                     color: $primary-color;
                 }
             }
         }
+    }
+}
+
+/* Media Queries para Responsividade */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0;
+    }
+
+    section {
+        padding: 20px; // Adiciona espaço extra para evitar cortes em iPhones
+    }
+
+    .form-section {
+        flex-grow: 1;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    section {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 20px;
+    }
+
+    .btn-wrapper {
+        gap: 20px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+}
+
+/* Ajuste específico para iPhones */
+@media screen and (max-width: 375px) {
+    main {
+        height: calc(100vh - constant(safe-area-inset-top)); // Considera áreas seguras
+        height: calc(100vh - env(safe-area-inset-top)); // Suporte para navegadores modernos
+    }
+
+    section {
+        padding-top: env(safe-area-inset-top); // Evita cortes no topo
     }
 }
