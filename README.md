@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# PageLogin README/ENGLISH
+# LoginPage README/ENGLISH
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.1.
 
@@ -72,7 +71,7 @@ For more information on using the Angular CLI, including detailed command refere
 
 
 
-# PaginadeLogin README/PORTUGUÊS
+# PaginaLogin README/PORTUGUÊS
 
 Este projeto foi gerado usando [Angular CLI](https://github.com/angular/angular-cli) versão 19.2.1. 
 
@@ -130,4 +129,3 @@ Para mais informações sobre o uso do Angular CLI, incluindo referências detal
 =======
 # LoginPage
 PROJETO APP DE LOGIN ANGULAR + TYPESCRIPT | FRONTEND
->>>>>>> 89f712c16f34fa681f4d45be89adc306eed55796
