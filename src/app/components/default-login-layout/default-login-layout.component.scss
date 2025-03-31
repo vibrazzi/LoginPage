@@ -100,12 +100,12 @@ main {
 @media screen and (max-width: 768px) {
     main {
         flex-direction: column-reverse;
-        align-items: stretch;  
+        align-items: center;  
         display: table;
     }
 
     section {
-        padding: 40px; // Adiciona espaço extra para evitar cortes em iPhones
+        padding: 20px; // Adiciona espaço extra para evitar cortes em iPhones
     }
 
     .form-section {
@@ -138,14 +138,13 @@ main {
 @media screen and (max-width: 480px) {
     section {
         flex-direction: column-reverse;
-        align-items: stretch;
+        align-items: center;
         padding: 20px;
+        position: relative;
     }
-  .img {
-        flex-direction: column-reverse;
-  }
+
     .btn-wrapper {
-        gap: 40px;
+        gap: 20px;
     }
 
     h2 {
