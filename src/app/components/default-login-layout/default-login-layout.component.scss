@@ -7,6 +7,7 @@ main {
     justify-content: center;
     height: 100vh; // Ocupa 100% do viewport
     overflow-y: auto; // Permite rolagem caso o conteúdo ultrapasse o viewport
+    position: relative;
 
     section {
         height: 100%;
