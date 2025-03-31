@@ -99,7 +99,7 @@ main {
 @media screen and (max-width: 768px) {
     main {
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
         padding: 0;
     }
 
@@ -136,7 +136,12 @@ main {
 @media screen and (max-width: 480px) {
     section {
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
+        padding: 20px;
+    }
+    .img {
+        flex-direction: center;
+        align-items: center;
         padding: 20px;
     }
 
