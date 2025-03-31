@@ -121,6 +121,17 @@ main {
         padding: 8px 16px;
     }
 }
+/* Ajuste específico para iPhones */
+@media screen and (max-width: 375px) {
+    main {
+        height: calc(100vh - constant(safe-area-inset-top)); // Considera áreas seguras
+        height: calc(100vh - env(safe-area-inset-top)); // Suporte para navegadores modernos
+    }
+
+    section {
+        padding-top: env(safe-area-inset-top); // Evita cortes no topo
+    }
+}
 
 @media screen and (max-width: 480px) {
     section {
@@ -138,14 +149,4 @@ main {
     }
 }
 
-/* Ajuste específico para iPhones */
-@media screen and (max-width: 375px) {
-    main {
-        height: calc(100vh - constant(safe-area-inset-top)); // Considera áreas seguras
-        height: calc(100vh - env(safe-area-inset-top)); // Suporte para navegadores modernos
-    }
 
-    section {
-        padding-top: env(safe-area-inset-top); // Evita cortes no topo
-    }
-}
