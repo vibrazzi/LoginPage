@@ -5,10 +5,19 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 100vh; // Ocupa 100% do viewport
+    height: 115vh; // Ocupa 100% do viewport
     overflow-y: auto; // Permite rolagem caso o conteúdo ultrapasse o viewport
     position: relative;
 
+    footer {
+        background-color: rgb(77, 21, 133); /* Cor de fundo */
+        padding: 15px; /* Espaçamento interno */
+        position: fixed; /* Mantém o rodapé fixo no fim da página */
+        bottom: 0; /* Posiciona na parte inferior */
+        width: 100%; /* Ocupa toda a largura da tela */
+    
+    }
+    
     section {
         height: 100%;
         display: flex;
