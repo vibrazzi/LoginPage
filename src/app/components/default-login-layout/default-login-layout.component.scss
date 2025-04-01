@@ -101,7 +101,7 @@ main {
     main {
         flex-direction: column-reverse;
         align-items: center;  
-        display: table;
+        display: table-header-group;
     }
 
     section {
@@ -111,7 +111,7 @@ main {
     .form-section {
         flex-grow: 1;
         padding: 10px;
-        display: table;
+       
     }
 
     h2 {
@@ -140,7 +140,7 @@ main {
         flex-direction: column-reverse;
         align-items: center;
         padding: 20px;
-        position: relative;
+    
     }
 
     .btn-wrapper {
